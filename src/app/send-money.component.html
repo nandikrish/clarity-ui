@@ -1,0 +1,36 @@
+<wizard>
+  <wizard-step title="1">
+    <div>
+      <form #myForm="ngForm">
+        <section class="form-block">
+          <label>My Form</label>
+          <div class="form-group">
+            <label class="required">Name</label>
+            <label for="nameInput" aria-haspopup="true" role="tooltip" [class.invalid]="name.touched && !name.valid" class="tooltip tooltip-validation tooltip-md tooltip-bottom-right">
+                        <input type="text" id="nameInput" required [(ngModel)]="model.name" name="name" #name="ngModel">
+                        <span class="tooltip-content">
+                          This field cannot be empty!
+                      </span>
+                    </label>
+          </div>
+          <div class="form-group">
+            <label for="favInput">Favorite food</label>
+            <input type="text" id="favInput" [(ngModel)]="model.favorite" name="favorite">
+          </div>
+        </section>
+      </form>
+    </div>
+    <button type="button" nextStep>Next Step</button>
+    <button type="button" goToStep="2">Go directly to third Step</button>
+  </wizard-step>
+  <wizard-step title="2">
+    Content of Step 2
+    <button type="button" previousStep>Go to previous step</button>
+    <button type="button" nextStep>Go to next step</button>
+  </wizard-step>
+  <wizard-step title="3">
+    Content of Step 3
+    <button type="button" previousStep>Previous Step</button>
+    <button type="button">Finish</button>
+  </wizard-step>
+</wizard>

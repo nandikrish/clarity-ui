@@ -1,0 +1,179 @@
+<p>
+  all-accounts works!
+</p>
+<button class="btn btn-primary" (click)="opened = true">Send Money</button>
+<clr-modal [(clrModalOpen)]="opened" [clrModalSize]="'lg'">
+  <h3 class="modal-title text-center">Send Money</h3>
+  <div class="modal-body">
+    <wizard>
+      <wizard-step title="What">
+        <form #employeeForm="ngForm" (ngSubmit)="onSubmit()" [hidden]="submitted" [ngClass]="'padding'">
+          <section class="form-block">
+            <div class="form-group row">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <label for="to">To:</label>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                <input type="text" id="to" placeholder="Enter Some Text" required name="to" [(ngModel)]="model.to" #toInput="ngModel" size="50"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <label for="from">From:</label>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                <input type="text" id="from" placeholder="Enter Some Text" required name="from" [(ngModel)]="model.from" #fromInput="ngModel"
+                  size="50" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <label for="from">Amount:</label>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                <input type="text" id="amount1" placeholder="Enter Some Text" required name="amount1" [(ngModel)]="model.amount1" #amount1Input="ngModel"
+                  size="23" />
+                <input type="text" id="amount2" placeholder="Enter Some Text" required name="amount2" [(ngModel)]="model.amount2" #amount2Input="ngModel"
+                  size="23" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <label for="desc">Description for Beneficiary:</label>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                <input type="text" id="desc" placeholder="Enter Some Text" required name="desc" [(ngModel)]="model.desc" #descInput="ngModel"
+                  size="50" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                <div class="checkbox-inline">
+                  <input type="checkbox" id="othercheckbox" checked>
+                  <label for="othercheckbox">Use same for myself</label>
+                </div>
+              </div>
+            </div>
+          </section>
+          <button type="button" class="btn btn-outline" (click)="opened = false">Cancel</button>
+          <button type="button" class="btn btn-primary" nextStep [disabled]="!employeeForm.valid">Continue</button>
+        </form>
+      </wizard-step>
+      <wizard-step title="When">
+        <form #employeeForm="ngForm" (ngSubmit)="onSubmit()" [hidden]="submitted" [ngClass]="'padding'">
+          <section class="form-block">
+            <div class="form-group row">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <label for="to">To:</label>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                <input type="text" id="to" placeholder="Enter Some Text" required name="to" [(ngModel)]="model.to" #toInput="ngModel" size="50"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <label for="from">From:</label>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                <input type="text" id="from" placeholder="Enter Some Text" required name="from" [(ngModel)]="model.from" #fromInput="ngModel"
+                  size="50" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <label for="from">Amount:</label>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                <input type="text" id="amount1" placeholder="Enter Some Text" required name="amount1" [(ngModel)]="model.amount1" #amount1Input="ngModel"
+                  size="23" />
+                <input type="text" id="amount2" placeholder="Enter Some Text" required name="amount2" [(ngModel)]="model.amount2" #amount2Input="ngModel"
+                  size="23" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <label for="desc">Description for Beneficiary:</label>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                <input type="text" id="desc" placeholder="Enter Some Text" required name="desc" [(ngModel)]="model.desc" #descInput="ngModel"
+                  size="50" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                <div class="checkbox-inline">
+                  <input type="checkbox" id="othercheckbox" checked>
+                  <label for="othercheckbox">Use same for myself</label>
+                </div>
+              </div>
+            </div>
+          </section>
+          <button type="button" class="btn btn-outline" previousStep>Back</button>
+          <button type="button" class="btn btn-primary" nextStep [disabled]="!employeeForm.valid">Next</button>
+        </form>
+      </wizard-step>
+      <wizard-step title="Review">
+        <form #employeeForm="ngForm" (ngSubmit)="onSubmit()" [hidden]="submitted" [ngClass]="'padding'">
+          <section class="form-block">
+            <div class="form-group row">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <label for="to">To:</label>
+              </div>
+              <div class="col-lg-8 col-md-12 col-s m-12 col-xs-12">
+                <input type="text" id="to" placeholder="Enter Some Text" required name="to" [(ngModel)]="model.to" #toInput="ngModel" size="50"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <label for="from">From:</label>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                <input type="text" id="from" placeholder="Enter Some Text" required name="from" [(ngModel)]="model.from" #fromInput="ngModel"
+                  size="50" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <label for="from">Amount:</label>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                <input type="text" id="amount1" placeholder="Enter Some Text" required name="amount1" [(ngModel)]="model.amount1" #amount1Input="ngModel"
+                  size="23" />
+                <input type="text" id="amount2" placeholder="Enter Some Text" required name="amount2" [(ngModel)]="model.amount2" #amount2Input="ngModel"
+                  size="23" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <label for="desc">Description for Beneficiary:</label>
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                <input type="text" id="desc" placeholder="Enter Some Text" required name="desc" [(ngModel)]="model.desc" #descInput="ngModel"
+                  size="50" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+              </div>
+              <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                <div class="checkbox-inline">
+                  <input type="checkbox" id="othercheckbox" checked>
+                  <label for="othercheckbox">Use same for myself</label>
+                </div>
+              </div>
+            </div>
+          </section>
+          <button type="button" class="btn btn-outline" previousStep>Back</button>
+          <button type="button" class="btn btn-primary" [disabled]="!employeeForm.valid">Submit</button>
+        </form>
+      </wizard-step>
+    </wizard>
+  </div>
+</clr-modal>

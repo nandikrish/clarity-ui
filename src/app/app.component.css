@@ -1,0 +1,64 @@
+a{
+    text-decoration:none;
+}
+.padding{
+    padding:2%;
+}
+/** cards */
+.card-block {
+    height: 65px;
+}
+.card-title {
+    font-size: 15px;
+}
+.info-outline{
+    border-color:#31b0d5;
+    background-color:transparent;
+    color:#31b0d5;
+    box-shadow:0 3px 0 0 #31b0d5;
+}
+.success-outline{
+    border-color:#60b515;
+    background-color:transparent;
+    color:#60b515;
+    box-shadow:0 3px 0 0 #60b515;
+}
+.default-outline{
+    border-color:#999;
+    background-color:transparent;
+    color:#999;
+    box-shadow:0 3px 0 0 #999;
+}
+.warning-outline{
+    border-color:#ec971f;
+    background-color:transparent;
+    color:#ec971f;
+    box-shadow:0 3px 0 0 #ec971f;
+}
+.purple-outline{
+    border-color:#800080;
+    background-color:transparent;
+    color:#800080;
+    box-shadow:0 3px 0 0 #800080;
+}
+.bg-grey{
+    background-color:#999 !important
+}
+.bg-purple{
+    background-color:#800080 !important
+}
+.bg-hover{
+    color:white !important;
+}
+/** labels */
+.label-blue{
+    border:1px solid #004a70;
+}
+.label-green{
+    border:1px solid #266900;
+}
+.label, a.label {
+    padding: 0 8px;
+    border-radius: 15px;
+    height: 15px;
+}
