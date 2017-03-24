@@ -9,7 +9,7 @@ import { InvestmentsComponent } from './investments/investments.component';
 import { SendMoneyComponent } from './send-money.component';
 
 const APP_ROUTES: Routes=[
-    //{path: '', redirectTo: '/login', pathMatch: 'full'},
+    {path: '', redirectTo: '/allAccounts', pathMatch: 'full'},
     {path:'allAccounts', component:AllAccountsComponent},
     {path:'cashAccounts', component:CashAccountsComponent},
     {path:'cards', component:CardsComponent},
