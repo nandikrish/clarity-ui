@@ -407,7 +407,7 @@ var AppModule = (function () {
 
 
 var APP_ROUTES = [
-    //{path: '', redirectTo: '/login', pathMatch: 'full'},
+    { path: '', redirectTo: '/allAccounts', pathMatch: 'full' },
     { path: 'allAccounts', component: __WEBPACK_IMPORTED_MODULE_1__all_accounts_all_accounts_component__["a" /* AllAccountsComponent */] },
     { path: 'cashAccounts', component: __WEBPACK_IMPORTED_MODULE_2__cash_accounts_cash_accounts_component__["a" /* CashAccountsComponent */] },
     { path: 'cards', component: __WEBPACK_IMPORTED_MODULE_3__cards_cards_component__["a" /* CardsComponent */] },
