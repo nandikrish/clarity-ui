@@ -7,7 +7,7 @@
   <div class="modal-body">
     <wizard>
       <wizard-step title="What">
-        <form #employeeForm="ngForm" (ngSubmit)="onSubmit()" [hidden]="submitted" [ngClass]="'padding'">
+        <form #employeeForm="ngForm" (ngSubmit)="onSubmit()" [hidden]="submitted" [ngClass]="'margin'">
           <section class="form-block">
             <div class="form-group row">
               <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
@@ -169,9 +169,9 @@
                 </div>
               </div>
             </div>
+            <button type="button" class="btn btn-outline" previousStep>Back</button>
+            <button type="button" class="btn btn-primary" [disabled]="!employeeForm.valid">Submit</button>
           </section>
-          <button type="button" class="btn btn-outline" previousStep>Back</button>
-          <button type="button" class="btn btn-primary" [disabled]="!employeeForm.valid">Submit</button>
         </form>
       </wizard-step>
     </wizard>
