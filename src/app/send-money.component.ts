@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import {Wizard} from "clarity-angular";
 
 @Component({
   selector: 'ui-send-money',
@@ -12,8 +13,8 @@ export class SendMoneyComponent implements OnInit {
   ngOnInit() {
   }
 
-  /*@ViewChild("wizard") wizard: Wizard;
-  open: boolean = true;*/
+  @ViewChild("wizard") wizard: Wizard;
+  open: boolean = true;
 
   model = {
     name: "",

@@ -2,7 +2,19 @@
   <header class="header-6">
     <div class="branding">
       <a class="nav-link">
+        <clr-dropdown [clrMenuPosition]="'bottom-right'" [clrCloseMenuOnItemClick]="false">
+          <button clrDropdownToggle>
         <clr-icon shape="menu"></clr-icon>
+    </button>
+          <div class="dropdown-menu">
+            <label class="dropdown-header">Dropdown header</label>
+            <a href="..." clrDropdownItem>Action 1</a>
+            <a href="..." clrDropdownItem>Action 2</a>
+            <div class="dropdown-divider"></div>
+            <a href="..." clrDropdownItem>Link 1</a>
+            <a href="..." clrDropdownItem>Link 2</a>
+          </div>
+        </clr-dropdown>
         <span class="title">iGTBANK</span>
       </a>
     </div>
@@ -57,7 +69,7 @@
     <div class="content-area">
       <div class="row">
         <div class="col-lg-25 col-md-12 col-sm-12 col-xs-12" *ngFor="let card of cards">
-          <div class="card {{card.cardClass}}" routerLinkActive="{{card.activeLink}}" >
+          <div class="card {{card.cardClass}}" routerLinkActive="{{card.activeLink}}">
             <a routerLink="{{card.routerLink}}">
               <div class="card-block">
                 <h4 class="card-title">

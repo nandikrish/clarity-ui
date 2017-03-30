@@ -1,6 +1,15 @@
 <p>
   all-accounts works!
 </p>
+<div class="col-md-12">
+<ul class="list">
+  <li><a>Consequat</a></li>
+  <li><a>Adipisicing</a></li>
+  <li><a>Exercitation</a></li>
+  <li><a>Exercitation</a></li>
+  <li><a>Exercitation</a></li>      
+</ul>
+</div>
 <button class="btn btn-primary" (click)="opened = true">Send Money</button>
 <clr-modal [(clrModalOpen)]="opened" [clrModalSize]="'lg'">
   <h3 class="modal-title text-center">Send Money</h3>
@@ -177,3 +186,4 @@
     </wizard>
   </div>
 </clr-modal>
+<button class="btn btn-primary" (click)="opened = true"><a routerLink="/sendMoney">select wizard</a></button>
