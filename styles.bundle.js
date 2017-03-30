@@ -253,7 +253,7 @@ function updateLink(linkElement, obj) {
 
 /***/ }),
 
-/***/ 351:
+/***/ 352:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -280,7 +280,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 352:
+/***/ 353:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -307,7 +307,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 353:
+/***/ 354:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -429,7 +429,7 @@ exports = module.exports = __webpack_require__(53)();
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n clr-wizard.clr-wiz .content-container {\n    display: -webkit-box !important;\n    display: -ms-flexbox !important;\n    display: flex !important;\n    height: auto !important;  \n    -webkit-box-orient: vertical !important;  \n    -webkit-box-direction: normal !important;  \n        -ms-flex-direction: column !important;  \n            flex-direction: column !important;\n}\n.clr-wiz nav {\n    width: 100% !important;\n    max-width: 100% !important;\n    min-width: 100% !important;\n    background-color: transparent !important;\n    padding: 0 0 0 0 !important;\n}\n.clr-wiz ol {\n    display: -webkit-box !important;\n    display: -ms-flexbox !important;\n    display: flex !important;\n    -webkit-box-orient :horizontal !important;\n    -webkit-box-direction :normal !important;\n        -ms-flex-direction :row !important;\n            flex-direction :row !important;\n    -webkit-box-pack: center !important;\n        -ms-flex-pack: center !important;\n            justify-content: center !important;\n    padding-left: 12% !important;\n    padding-right: 12% !important;\n    margin-top: 4em;   \n}\n.clr-wizard clr-wizard-step.active, .clr-wizard clr-wizard-step.disabled, .clr-wizard clr-wizard-step.complete {\n    box-shadow: initial !important;\n    opacity: initial !important;\n}\n.clr-wizard clr-wizard-step.active, .clr-wizard clr-wizard-step.complete {\n    color: #fff !important\n}\n.clr-wiz clr-wizard-step button {\n    padding: 0 0 0 0 !important;\n    color: #808080 !important;\n    text-decoration: none !important;\n    text-transform: capitalize !important;\n    font-weight: normal !important;\n    -webkit-transition: 0.25s !important;\n    transition: 0.25s !important;\n    cursor: pointer !important;\n    font-size: 12px !important;\n}\n.clr-wizard clr-wizard-step button:before {\n    display:none;\n}\n.clr-wizard ol clr-wizard-step:after { \n    content: counter(a) !important;\n    counter-increment: a !important;\n    position: absolute;\n    top: -14px;\n    line-height: 1.8em !important;\n    width: 22px !important;\n    height: 22px !important;    \n    border-radius: 100% !important;\n    font-size: 12px !important;\n    text-align: center;\n    left: 7px;\n}\n.clr-wizard ol clr-wizard-step.active:after, .clr-wizard ol clr-wizard-step.complete:after {\n    background-color: #60b515 !important;\n}\n.clr-wizard ol clr-wizard-step.disabled:after {\n    background-color: #E6E6E6 !important;\n}\n.clr-wizard ol clr-wizard-step.active:before{\n    background-color: initial !important;\n}\n.clr-wizard ol clr-wizard-step:not(:last-child):before {\n    background-color: #E6E6E6 !important;\n    content: '' !important;\n    position: absolute !important;\n    height: 3px !important;\n    width: calc(100% - 14px) !important;\n    top: -5px !important;\n    left: 25px!important;\n}\n.clr-wizard ol clr-wizard-step:last-child{\n    width: auto !important;\n}", ""]);
 
 // exports
 
@@ -439,9 +439,9 @@ exports.push([module.i, "/* You can add global styles to this file, and also imp
 /***/ 573:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(353);
-__webpack_require__(351);
-module.exports = __webpack_require__(352);
+__webpack_require__(354);
+__webpack_require__(352);
+module.exports = __webpack_require__(353);
 
 
 /***/ })
