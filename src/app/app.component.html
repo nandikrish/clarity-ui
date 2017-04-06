@@ -2,17 +2,41 @@
   <header class="header-6">
     <div class="branding">
       <a class="nav-link">
-        <clr-dropdown [clrMenuPosition]="'bottom-right'" [clrCloseMenuOnItemClick]="false">
-          <button clrDropdownToggle>
-        <clr-icon shape="menu"></clr-icon>
-    </button>
+        <clr-dropdown [clrMenuPosition]="'bottom-left'" [clrCloseMenuOnItemClick]="false">
+          <button class="btn-inverse" clrDropdownToggle>
+            <clr-icon shape="menu"></clr-icon>
+          </button>
           <div class="dropdown-menu">
-            <label class="dropdown-header">Dropdown header</label>
-            <a href="..." clrDropdownItem>Action 1</a>
-            <a href="..." clrDropdownItem>Action 2</a>
+            <clr-tree-node *ngFor="let directory of rootDirectory" [clrTreeNodeExpanded]="directory.expanded" class="list" clrDropdownItem>
+              <clr-icon [attr.shape]="directory.icon" size="22"></clr-icon>
+              {{directory.name}}
+              <clr-tree-node *ngFor="let file of directory.files" class="treenode-content">
+                {{file.name}}
+              </clr-tree-node>
+            </clr-tree-node>
             <div class="dropdown-divider"></div>
-            <a href="..." clrDropdownItem>Link 1</a>
-            <a href="..." clrDropdownItem>Link 2</a>
+            <div class="card-block">
+              <div class="row text-center">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <div class="card-title">
+                    <clr-icon shape="settings" size="22"></clr-icon>
+                  </div>
+                  <div class="card-text">Night Mode</div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <div class="card-title">
+                    <clr-icon shape="settings" size="22"></clr-icon>
+                  </div>
+                  <div class="card-text">Settings</div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <div class="card-title">
+                    <clr-icon shape="settings" size="22"></clr-icon>
+                  </div>
+                  <div class="card-text">Approvals</div>
+                </div>
+              </div>
+            </div>
           </div>
         </clr-dropdown>
         <span class="title">iGTBANK</span>

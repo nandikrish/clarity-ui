@@ -1,5 +1,6 @@
 a{
     text-decoration:none;
+    color:#565656;
 }
 .margin{
     margin:2%;
@@ -61,4 +62,39 @@ a{
     padding: 0 8px;
     border-radius: 15px;
     height: 15px;
+}
+/** dropdown */
+.dropdown .dropdown-menu .dropdown-item{
+    padding: 2.5% 0 2.5% 1%;
+    line-height: 46px;
+    width:300px;
+}
+clr-tree-node.list .clr-treenode-caret clr-icon{
+    height: 16px!important;
+}
+/** vertical lines */
+.list clr-tree-node {
+    position: relative;
+    display: table;
+    list-style-type: circle;
+    padding: 7px 0 10px 30px;
+}
+.list clr-tree-node:not(:last-child):before {
+    background-color: lightgrey;
+    content: '';
+    position: absolute;
+    left: 38px;
+    top: 22px;
+    height: 100%;
+    width: 1px;
+}
+.list clr-tree-node:after {
+    position: absolute;
+    top: 19px;
+    left: 35px;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color:lightgrey;
+    content: '';
 }

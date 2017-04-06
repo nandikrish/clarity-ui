@@ -1,23 +1,74 @@
-.horizontal[_nghost-kop-31] ul.steps-indicator[_ngcontent-kop-31] li.current[_ngcontent-kop-31]:after {
-    background-color: #808080;
+clr-wizard.clr-wiz .content-container {
+    display: flex !important;
+    height: auto !important;  
+    flex-direction: column !important;
 }
-.horizontal[_nghost-kop-31] ul.steps-indicator[_ngcontent-kop-31] li[_ngcontent-kop-31]:after {
+.clr-wiz nav {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    background-color: transparent !important;
+    padding: 0 0 0 0 !important;
+}
+.clr-wiz ol {
+    display: flex !important;
+    flex-direction :row !important;
+    justify-content: center !important;
+    padding-left: 12% !important;
+    padding-right: 12% !important;
+    margin-top: 4em;   
+}
+.clr-wiz clr-wizard-step.active, .clr-wiz clr-wizard-step.disabled, .clr-wiz clr-wizard-step.complete {
+    box-shadow: initial !important;
+    opacity: initial !important;
+}
+.clr-wiz clr-wizard-step.active, .clr-wiz clr-wizard-step.complete {
+    color: #fff !important
+}
+.clr-wiz clr-wizard-step button {
+    padding: 0 0 0 0 !important;
+    color: #808080 !important;
+    text-decoration: none !important;
+    text-transform: capitalize !important;
+    font-weight: normal !important;
+    transition: 0.25s !important;
+    cursor: pointer !important;
+    font-size: 12px !important;
+}
+.clr-wiz clr-wizard-step button:before {
+    display:none;
+}
+.clr-wiz ol clr-wizard-step:after { 
+    content: counter(a) !important;
+    counter-increment: a !important;
     position: absolute;
     top: -14px;
-    left: calc(50% - 7px);
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    background-color: #E6E6E6;
-    content: '';
-    transition: 0.25s;
+    line-height: 1.8em !important;
+    width: 22px !important;
+    height: 22px !important;    
+    border-radius: 100% !important;
+    font-size: 12px !important;
+    text-align: center;
+    left: 7px;
 }
-horizontal[_nghost-dlc-31] ul.steps-indicator[_ngcontent-dlc-31] li[_ngcontent-dlc-31]:not(:last-child):before {
-    background-color: #E6E6E6;
-    content: '';
-    position: absolute;
-    height: 5px;
-    width: calc(100% - 14px);
-    top: -10px;
-    left: calc(50% + 7px);
+.clr-wiz ol clr-wizard-step.active:after, .clr-wiz ol clr-wizard-step.complete:after {
+    background-color: #60b515 !important;
+}
+.clr-wiz ol clr-wizard-step.disabled:after {
+    background-color: #E6E6E6 !important;
+}
+.clr-wiz ol clr-wizard-step.active:before{
+    background-color: initial !important;
+}
+.clr-wiz ol clr-wizard-step:not(:last-child):before {
+    background-color: #E6E6E6 !important;
+    content: '' !important;
+    position: absolute !important;
+    height: 3px !important;
+    width: calc(100% - 14px) !important;
+    top: -5px !important;
+    left: 25px!important;
+}
+.clr-wiz ol clr-wizard-step:last-child{
+    width: auto !important;
 }

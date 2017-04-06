@@ -1,0 +1,65 @@
+clr-wizard.clr-wiz .content-container
+  display: flex !important
+  height: auto !important
+  flex-direction: column !important
+
+.clr-wiz
+  nav
+    width: 100% !important
+    max-width: 100% !important
+    min-width: 100% !important
+    background-color: transparent !important
+    padding: 0 0 0 0 !important
+  ol
+    display: flex !important
+    flex-direction: row !important
+    justify-content: center !important
+    padding-left: 12% !important
+    padding-right: 12% !important
+    margin-top: 4em
+  clr-wizard-step
+    &.active, &.disabled, &.complete
+      box-shadow: initial !important
+      opacity: initial !important
+    &.active, &.complete
+      color: #fff !important
+    button
+      padding: 0 0 0 0 !important
+      color: #808080 !important
+      text-decoration: none !important
+      text-transform: capitalize !important
+      font-weight: normal !important
+      transition: 0.25s !important
+      cursor: pointer !important
+      font-size: 12px !important
+      &:before
+        display: none
+  ol clr-wizard-step
+    &:after
+      content: counter(a) !important
+      counter-increment: a !important
+      position: absolute
+      top: -14px
+      line-height: 1.8em !important
+      width: 22px !important
+      height: 22px !important
+      border-radius: 100% !important
+      font-size: 12px !important
+      text-align: center
+      left: 7px
+    &.active:after, &.complete:after
+      background-color: #60b515 !important
+    &.disabled:after
+      background-color: #E6E6E6 !important
+    &.active:before
+      background-color: initial !important
+    &:not(:last-child):before
+      background-color: #E6E6E6 !important
+      content: '' !important
+      position: absolute !important
+      height: 3px !important
+      width: calc(100% - 14px) !important
+      top: -5px !important
+      left: 25px !important
+    &:last-child
+      width: auto !important

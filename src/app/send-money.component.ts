@@ -4,7 +4,7 @@ import {Wizard} from "clarity-angular";
 @Component({
   selector: 'ui-send-money',
   templateUrl: './send-money.component.html',
-  styleUrls: ['./send-money.component.css']
+  styleUrls: ['./send-money.component.sass']
 })
 export class SendMoneyComponent implements OnInit {
 
@@ -20,4 +20,8 @@ export class SendMoneyComponent implements OnInit {
     name: "",
     favorite: ""
   };
+
+  onCommit(): void {
+    alert("wizard finish");
+  }
 }
