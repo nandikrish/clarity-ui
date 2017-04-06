@@ -45,7 +45,7 @@ var AllAccountsComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'ui-all-accounts',
             template: __webpack_require__(546),
-            styles: [__webpack_require__(533)]
+            styles: [__webpack_require__(534)]
         }), 
         __metadata('design:paramtypes', [])
     ], AllAccountsComponent);
@@ -220,6 +220,9 @@ var SendMoneyComponent = (function () {
     }
     SendMoneyComponent.prototype.ngOnInit = function () {
     };
+    SendMoneyComponent.prototype.onCommit = function () {
+        alert("wizard finish");
+    };
     __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])("wizard"), 
         __metadata('design:type', (typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_clarity_angular__["Wizard"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1_clarity_angular__["Wizard"]) === 'function' && _a) || Object)
@@ -228,7 +231,7 @@ var SendMoneyComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'ui-send-money',
             template: __webpack_require__(553),
-            styles: [__webpack_require__(535)]
+            styles: [__webpack_require__(533)]
         }), 
         __metadata('design:paramtypes', [])
     ], SendMoneyComponent);
@@ -299,12 +302,73 @@ var AppComponent = (function () {
             { cardClass: "purple-outline", activeLink: "bg-purple bg-hover", routerLink: "bankLoans", cardTitle: "Bank Loans", cardBadge: "11", cardText: "9,630,000.00 USD" },
             { cardClass: "success-outline", activeLink: "bg-success bg-hover", routerLink: "investments", cardTitle: "Investments", cardBadge: "11", cardText: "9,630,000.00 USD" },
         ];
+        this.rootDirectory = [
+            {
+                name: "Dashboard",
+                icon: "dashboard",
+                expanded: false,
+            },
+            {
+                name: "Payment Center",
+                icon: "folder",
+                expanded: false,
+            },
+            {
+                name: "Track",
+                icon: "folder",
+                expanded: false,
+            },
+            {
+                name: "Analyze",
+                icon: "bar-chart",
+                expanded: false,
+                files: [
+                    {
+                        icon: "image",
+                        name: "Accounts",
+                    },
+                    {
+                        icon: "image",
+                        name: "Financial Analysis",
+                    },
+                    {
+                        icon: "image",
+                        name: "Cash Flow",
+                    },
+                    {
+                        icon: "image",
+                        name: "Customer Insights",
+                    },
+                    {
+                        icon: "image",
+                        name: "Business Benchmark",
+                    },
+                ]
+            },
+            {
+                name: "Plan",
+                icon: "folder",
+                expanded: false,
+            },
+            {
+                name: "Optimize",
+                icon: "folder",
+                expanded: false,
+            },
+            {
+                name: "Contact Book",
+                icon: "folder",
+                expanded: false,
+            },
+        ];
     }
+    AppComponent.prototype.openFile = function (directoryName, fileName) {
+    };
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'ui-root',
             template: __webpack_require__(547),
-            styles: [__webpack_require__(534)]
+            styles: [__webpack_require__(535)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -485,7 +549,7 @@ exports = module.exports = __webpack_require__(53)();
 
 
 // module
-exports.push([module.i, ".margin{\n    margin:2%;\n}\n/** input */\ninput[type=text], input[type=password], input[type=number], input[type=email], input[type=url], input[type=tel], input[type=date] {\n    border-radius: 2px;\n    height: 35px;\n    border: 1px solid #9a9a9a;\n}\n.select select {\n    border-radius: 2px;\n    height: 35px;\n    border: 1px solid #9a9a9a;\n}\n.select::after {\n    top: 12px;\n}\n/** modal */\n.modal {\n    overflow-y: scroll;\n}\n/** ordered list */\n/*ul.list{\n    padding: 5px 5px 5px 19px;\n    list-style: none;\n    margin: auto;\n}\nul{\n    display: block;\n    list-style-type: disc;\n    -webkit-margin-before: 1em;\n    -webkit-margin-after: 1em;\n    -webkit-margin-start: 0px;\n    -webkit-margin-end: 0px;\n    -webkit-padding-start: 40px;\n}\nul.list li:not(:last-child) {\n    margin-bottom: 0;\n    padding-bottom: 10px;\n}*/\nul.list li {\n    position: relative;\n    line-height: 30px;\n    display: table;\n    list-style-type: circle;\n}\nul.list li:not(:last-child):before {\n    background-color: lightgrey;\n    content: '';\n    position: absolute;\n    left: -11px;\n    top: 12px;\n    height: 100%;\n    /*top: 7px;\n    height: calc(100% - 7px);*/\n    width: 1px;\n}\nul.list li:after {\n    position: absolute;\n    top: 12px;\n    left: -14px;\n    width: 7px;\n    height: 7px;\n    border-radius: 100%;\n    background-color:lightgrey;\n    content: '';\n}\nul.list li a {\n    color: #808080;\n    float: left;\n    margin-left: 5px;\n    text-decoration: none;\n    text-transform: capitalize;\n    text-align: left;\n    font-weight: normal;\n    cursor: pointer;\n}", ""]);
+exports.push([module.i, "clr-wizard.clr-wiz .content-container {\n  display: -webkit-box !important;\n  display: -ms-flexbox !important;\n  display: flex !important;\n  height: auto !important;\n  -webkit-box-orient: vertical !important;\n  -webkit-box-direction: normal !important;\n      -ms-flex-direction: column !important;\n          flex-direction: column !important; }\n\n.clr-wiz nav {\n  width: 100% !important;\n  max-width: 100% !important;\n  min-width: 100% !important;\n  background-color: transparent !important;\n  padding: 0 0 0 0 !important; }\n\n.clr-wiz ol {\n  display: -webkit-box !important;\n  display: -ms-flexbox !important;\n  display: flex !important;\n  -webkit-box-orient: horizontal !important;\n  -webkit-box-direction: normal !important;\n      -ms-flex-direction: row !important;\n          flex-direction: row !important;\n  -webkit-box-pack: center !important;\n      -ms-flex-pack: center !important;\n          justify-content: center !important;\n  padding-left: 12% !important;\n  padding-right: 12% !important;\n  margin-top: 4em; }\n\n.clr-wiz clr-wizard-step.active, .clr-wiz clr-wizard-step.disabled, .clr-wiz clr-wizard-step.complete {\n  box-shadow: initial !important;\n  opacity: initial !important; }\n\n.clr-wiz clr-wizard-step.active, .clr-wiz clr-wizard-step.complete {\n  color: #fff !important; }\n\n.clr-wiz clr-wizard-step button {\n  padding: 0 0 0 0 !important;\n  color: #808080 !important;\n  text-decoration: none !important;\n  text-transform: capitalize !important;\n  font-weight: normal !important;\n  -webkit-transition: 0.25s !important;\n  transition: 0.25s !important;\n  cursor: pointer !important;\n  font-size: 12px !important; }\n  .clr-wiz clr-wizard-step button:before {\n    display: none; }\n\n.clr-wiz ol clr-wizard-step:after {\n  content: counter(a) !important;\n  counter-increment: a !important;\n  position: absolute;\n  top: -14px;\n  line-height: 1.8em !important;\n  width: 22px !important;\n  height: 22px !important;\n  border-radius: 100% !important;\n  font-size: 12px !important;\n  text-align: center;\n  left: 7px; }\n\n.clr-wiz ol clr-wizard-step.active:after, .clr-wiz ol clr-wizard-step.complete:after {\n  background-color: #60b515 !important; }\n\n.clr-wiz ol clr-wizard-step.disabled:after {\n  background-color: #E6E6E6 !important; }\n\n.clr-wiz ol clr-wizard-step.active:before {\n  background-color: initial !important; }\n\n.clr-wiz ol clr-wizard-step:not(:last-child):before {\n  background-color: #E6E6E6 !important;\n  content: '' !important;\n  position: absolute !important;\n  height: 3px !important;\n  width: calc(100% - 14px) !important;\n  top: -5px !important;\n  left: 25px !important; }\n\n.clr-wiz ol clr-wizard-step:last-child {\n  width: auto !important; }\n", ""]);
 
 // exports
 
@@ -503,7 +567,7 @@ exports = module.exports = __webpack_require__(53)();
 
 
 // module
-exports.push([module.i, "a{\n    text-decoration:none;\n}\n.margin{\n    margin:2%;\n}\n/** cards */\n.card-block {\n    height: 65px;\n}\n.card-title {\n    font-size: 15px;\n}\n.info-outline{\n    border-color:#31b0d5;\n    background-color:transparent;\n    color:#31b0d5;\n    box-shadow:0 3px 0 0 #31b0d5;\n}\n.success-outline{\n    border-color:#60b515;\n    background-color:transparent;\n    color:#60b515;\n    box-shadow:0 3px 0 0 #60b515;\n}\n.default-outline{\n    border-color:#999;\n    background-color:transparent;\n    color:#999;\n    box-shadow:0 3px 0 0 #999;\n}\n.warning-outline{\n    border-color:#ec971f;\n    background-color:transparent;\n    color:#ec971f;\n    box-shadow:0 3px 0 0 #ec971f;\n}\n.purple-outline{\n    border-color:#800080;\n    background-color:transparent;\n    color:#800080;\n    box-shadow:0 3px 0 0 #800080;\n}\n.bg-grey{\n    background-color:#999 !important\n}\n.bg-purple{\n    background-color:#800080 !important\n}\n.bg-hover{\n    color:white !important;\n}\n/** labels */\n.label-blue{\n    border:1px solid #004a70;\n}\n.label-green{\n    border:1px solid #266900;\n}\n.label, a.label {\n    padding: 0 8px;\n    border-radius: 15px;\n    height: 15px;\n}\n", ""]);
+exports.push([module.i, ".margin{\n    margin:2%;\n}\n/** input */\ninput[type=text], input[type=password], input[type=number], input[type=email], input[type=url], input[type=tel], input[type=date] {\n    border-radius: 2px;\n    height: 35px;\n    border: 1px solid #9a9a9a;\n}\n.select select {\n    border-radius: 2px;\n    height: 35px;\n    border: 1px solid #9a9a9a;\n}\n.select::after {\n    top: 12px;\n}\n/** modal */\n.modal {\n    overflow-y: scroll;\n}\n/** ordered list */\n/*ul.list{\n    padding: 5px 5px 5px 19px;\n    list-style: none;\n    margin: auto;\n}\nul{\n    display: block;\n    list-style-type: disc;\n    -webkit-margin-before: 1em;\n    -webkit-margin-after: 1em;\n    -webkit-margin-start: 0px;\n    -webkit-margin-end: 0px;\n    -webkit-padding-start: 40px;\n}\nul.list li:not(:last-child) {\n    margin-bottom: 0;\n    padding-bottom: 10px;\n}*/\nul.list li {\n    position: relative;\n    line-height: 30px;\n    display: table;\n    list-style-type: circle;\n}\nul.list li:not(:last-child):before {\n    background-color: lightgrey;\n    content: '';\n    position: absolute;\n    left: -11px;\n    top: 12px;\n    height: 100%;\n    /*top: 7px;\n    height: calc(100% - 7px);*/\n    width: 1px;\n}\nul.list li:after {\n    position: absolute;\n    top: 12px;\n    left: -14px;\n    width: 7px;\n    height: 7px;\n    border-radius: 100%;\n    background-color:lightgrey;\n    content: '';\n}\nul.list li a {\n    color: #808080;\n    float: left;\n    margin-left: 5px;\n    text-decoration: none;\n    text-transform: capitalize;\n    text-align: left;\n    font-weight: normal;\n    cursor: pointer;\n}", ""]);
 
 // exports
 
@@ -521,7 +585,7 @@ exports = module.exports = __webpack_require__(53)();
 
 
 // module
-exports.push([module.i, ".horizontal[_nghost-kop-31] ul.steps-indicator[_ngcontent-kop-31] li.current[_ngcontent-kop-31]:after {\n    background-color: #808080;\n}\n.horizontal[_nghost-kop-31] ul.steps-indicator[_ngcontent-kop-31] li[_ngcontent-kop-31]:after {\n    position: absolute;\n    top: -14px;\n    left: calc(50% - 7px);\n    width: 20px;\n    height: 20px;\n    border-radius: 100%;\n    background-color: #E6E6E6;\n    content: '';\n    -webkit-transition: 0.25s;\n    transition: 0.25s;\n}\nhorizontal[_nghost-dlc-31] ul.steps-indicator[_ngcontent-dlc-31] li[_ngcontent-dlc-31]:not(:last-child):before {\n    background-color: #E6E6E6;\n    content: '';\n    position: absolute;\n    height: 5px;\n    width: calc(100% - 14px);\n    top: -10px;\n    left: calc(50% + 7px);\n}", ""]);
+exports.push([module.i, "a{\n    text-decoration:none;\n    color:#565656;\n}\n.margin{\n    margin:2%;\n}\n/** cards */\n.card-block {\n    height: 65px;\n}\n.card-title {\n    font-size: 15px;\n}\n.info-outline{\n    border-color:#31b0d5;\n    background-color:transparent;\n    color:#31b0d5;\n    box-shadow:0 3px 0 0 #31b0d5;\n}\n.success-outline{\n    border-color:#60b515;\n    background-color:transparent;\n    color:#60b515;\n    box-shadow:0 3px 0 0 #60b515;\n}\n.default-outline{\n    border-color:#999;\n    background-color:transparent;\n    color:#999;\n    box-shadow:0 3px 0 0 #999;\n}\n.warning-outline{\n    border-color:#ec971f;\n    background-color:transparent;\n    color:#ec971f;\n    box-shadow:0 3px 0 0 #ec971f;\n}\n.purple-outline{\n    border-color:#800080;\n    background-color:transparent;\n    color:#800080;\n    box-shadow:0 3px 0 0 #800080;\n}\n.bg-grey{\n    background-color:#999 !important\n}\n.bg-purple{\n    background-color:#800080 !important\n}\n.bg-hover{\n    color:white !important;\n}\n/** labels */\n.label-blue{\n    border:1px solid #004a70;\n}\n.label-green{\n    border:1px solid #266900;\n}\n.label, a.label {\n    padding: 0 8px;\n    border-radius: 15px;\n    height: 15px;\n}\n/** dropdown */\n.dropdown .dropdown-menu .dropdown-item{\n    padding: 2.5% 0 2.5% 1%;\n    line-height: 46px;\n    width:300px;\n}\nclr-tree-node.list .clr-treenode-caret clr-icon{\n    height: 16px!important;\n}\n/** vertical lines */\n.list clr-tree-node {\n    position: relative;\n    display: table;\n    list-style-type: circle;\n    padding: 7px 0 10px 30px;\n}\n.list clr-tree-node:not(:last-child):before {\n    background-color: lightgrey;\n    content: '';\n    position: absolute;\n    left: 38px;\n    top: 22px;\n    height: 100%;\n    width: 1px;\n}\n.list clr-tree-node:after {\n    position: absolute;\n    top: 19px;\n    left: 35px;\n    width: 7px;\n    height: 7px;\n    border-radius: 100%;\n    background-color:lightgrey;\n    content: '';\n}\n", ""]);
 
 // exports
 
@@ -541,7 +605,7 @@ module.exports = "<p>\n  all-accounts works!\n</p>\n<div class=\"col-md-12\">\n<
 /***/ 547:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main-container\">\n  <header class=\"header-6\">\n    <div class=\"branding\">\n      <a class=\"nav-link\">\n        <clr-dropdown [clrMenuPosition]=\"'bottom-right'\" [clrCloseMenuOnItemClick]=\"false\">\n          <button clrDropdownToggle>\n        <clr-icon shape=\"menu\"></clr-icon>\n    </button>\n          <div class=\"dropdown-menu\">\n            <label class=\"dropdown-header\">Dropdown header</label>\n            <a href=\"...\" clrDropdownItem>Action 1</a>\n            <a href=\"...\" clrDropdownItem>Action 2</a>\n            <div class=\"dropdown-divider\"></div>\n            <a href=\"...\" clrDropdownItem>Link 1</a>\n            <a href=\"...\" clrDropdownItem>Link 2</a>\n          </div>\n        </clr-dropdown>\n        <span class=\"title\">iGTBANK</span>\n      </a>\n    </div>\n    <!--<div class=\"header-nav\"></div>-->\n    <div class=\"header-actions\">\n      <a class=\"nav-link nav-icon\">\n        <clr-icon shape=\"search\"></clr-icon>\n      </a>\n      <a class=\"nav-link nav-icon\">\n        <clr-icon shape=\"shopping-cart\" class=\"has-badge\"></clr-icon>\n      </a>\n      <a class=\"nav-link nav-icon\">\n        <clr-icon shape=\"email\" class=\"has-badge\"></clr-icon>\n      </a>\n      <clr-dropdown class=\"dropdown bottom-right\">\n        <button class=\"nav-text\" clrDropdownToggle>\n              <img src=\"https://www.atomix.com.au/media/2015/06/atomix_user31.png\" width=\"40\" height=\"40\" alt=\"user\">\n                John Doe\n                <clr-icon shape=\"caret down\"></clr-icon>\n            </button>\n        <div class=\"dropdown-menu\">\n          <a clrDropdownItem>Preferences</a>\n          <a clrDropdownItem>Log out</a>\n        </div>\n      </clr-dropdown>\n      <a class=\"nav-link nav-icon\">\n        <clr-icon shape=\"sign-out\"></clr-icon>\n      </a>\n    </div>\n  </header>\n  <nav class=\"subnav\">\n    <ul class=\"nav\">\n      <li class=\"nav-item\">\n        <clr-icon shape=\"cluster\"></clr-icon>\n        <a class=\"nav-link\">Accounts</a>\n      </li>\n    </ul>\n    <a class=\"text-right\">\n      <clr-dropdown class=\"dropdown bottom-right\">\n        <button class=\"nav-text\" clrDropdownToggle>\n                I WANT TO..\n                <clr-icon shape=\"caret down\"></clr-icon>\n            </button>\n        <div class=\"dropdown-menu\">\n          <a clrDropdownItem>Preferences</a>\n          <a clrDropdownItem>Log out</a>\n        </div>\n      </clr-dropdown>\n    </a>\n  </nav>\n  <div [ngClass]=\"'margin'\">\n    <div class=\"content-area\">\n      <div class=\"row\">\n        <div class=\"col-lg-25 col-md-12 col-sm-12 col-xs-12\" *ngFor=\"let card of cards\">\n          <div class=\"card {{card.cardClass}}\" routerLinkActive=\"{{card.activeLink}}\">\n            <a routerLink=\"{{card.routerLink}}\">\n              <div class=\"card-block\">\n                <h4 class=\"card-title\">\n                  <clr-icon shape=\"cluster\"></clr-icon> {{card.cardTitle}} <span class=\"label\">{{card.cardBadge}}</span></h4>\n              </div>\n              <div class=\"card-footer\">\n                <p class=\"card-text\">{{card.cardText}}</p>\n              </div>\n            </a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <router-outlet></router-outlet>\n</div>"
+module.exports = "<div class=\"main-container\">\n  <header class=\"header-6\">\n    <div class=\"branding\">\n      <a class=\"nav-link\">\n        <clr-dropdown [clrMenuPosition]=\"'bottom-left'\" [clrCloseMenuOnItemClick]=\"false\">\n          <button class=\"btn-inverse\" clrDropdownToggle>\n            <clr-icon shape=\"menu\"></clr-icon>\n          </button>\n          <div class=\"dropdown-menu\">\n            <clr-tree-node *ngFor=\"let directory of rootDirectory\" [clrTreeNodeExpanded]=\"directory.expanded\" class=\"list\" clrDropdownItem>\n              <clr-icon [attr.shape]=\"directory.icon\" size=\"22\"></clr-icon>\n              {{directory.name}}\n              <clr-tree-node *ngFor=\"let file of directory.files\" class=\"treenode-content\">\n                {{file.name}}\n              </clr-tree-node>\n            </clr-tree-node>\n            <div class=\"dropdown-divider\"></div>\n            <div class=\"card-block\">\n              <div class=\"row text-center\">\n                <div class=\"col-lg-4 col-md-4 col-sm-4 col-xs-4\">\n                  <div class=\"card-title\">\n                    <clr-icon shape=\"settings\" size=\"22\"></clr-icon>\n                  </div>\n                  <div class=\"card-text\">Night Mode</div>\n                </div>\n                <div class=\"col-lg-4 col-md-4 col-sm-4 col-xs-4\">\n                  <div class=\"card-title\">\n                    <clr-icon shape=\"settings\" size=\"22\"></clr-icon>\n                  </div>\n                  <div class=\"card-text\">Settings</div>\n                </div>\n                <div class=\"col-lg-4 col-md-4 col-sm-4 col-xs-4\">\n                  <div class=\"card-title\">\n                    <clr-icon shape=\"settings\" size=\"22\"></clr-icon>\n                  </div>\n                  <div class=\"card-text\">Approvals</div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </clr-dropdown>\n        <span class=\"title\">iGTBANK</span>\n      </a>\n    </div>\n    <!--<div class=\"header-nav\"></div>-->\n    <div class=\"header-actions\">\n      <a class=\"nav-link nav-icon\">\n        <clr-icon shape=\"search\"></clr-icon>\n      </a>\n      <a class=\"nav-link nav-icon\">\n        <clr-icon shape=\"shopping-cart\" class=\"has-badge\"></clr-icon>\n      </a>\n      <a class=\"nav-link nav-icon\">\n        <clr-icon shape=\"email\" class=\"has-badge\"></clr-icon>\n      </a>\n      <clr-dropdown class=\"dropdown bottom-right\">\n        <button class=\"nav-text\" clrDropdownToggle>\n              <img src=\"https://www.atomix.com.au/media/2015/06/atomix_user31.png\" width=\"40\" height=\"40\" alt=\"user\">\n                John Doe\n                <clr-icon shape=\"caret down\"></clr-icon>\n            </button>\n        <div class=\"dropdown-menu\">\n          <a clrDropdownItem>Preferences</a>\n          <a clrDropdownItem>Log out</a>\n        </div>\n      </clr-dropdown>\n      <a class=\"nav-link nav-icon\">\n        <clr-icon shape=\"sign-out\"></clr-icon>\n      </a>\n    </div>\n  </header>\n  <nav class=\"subnav\">\n    <ul class=\"nav\">\n      <li class=\"nav-item\">\n        <clr-icon shape=\"cluster\"></clr-icon>\n        <a class=\"nav-link\">Accounts</a>\n      </li>\n    </ul>\n    <a class=\"text-right\">\n      <clr-dropdown class=\"dropdown bottom-right\">\n        <button class=\"nav-text\" clrDropdownToggle>\n                I WANT TO..\n                <clr-icon shape=\"caret down\"></clr-icon>\n            </button>\n        <div class=\"dropdown-menu\">\n          <a clrDropdownItem>Preferences</a>\n          <a clrDropdownItem>Log out</a>\n        </div>\n      </clr-dropdown>\n    </a>\n  </nav>\n  <div [ngClass]=\"'margin'\">\n    <div class=\"content-area\">\n      <div class=\"row\">\n        <div class=\"col-lg-25 col-md-12 col-sm-12 col-xs-12\" *ngFor=\"let card of cards\">\n          <div class=\"card {{card.cardClass}}\" routerLinkActive=\"{{card.activeLink}}\">\n            <a routerLink=\"{{card.routerLink}}\">\n              <div class=\"card-block\">\n                <h4 class=\"card-title\">\n                  <clr-icon shape=\"cluster\"></clr-icon> {{card.cardTitle}} <span class=\"label\">{{card.cardBadge}}</span></h4>\n              </div>\n              <div class=\"card-footer\">\n                <p class=\"card-text\">{{card.cardText}}</p>\n              </div>\n            </a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <router-outlet></router-outlet>\n</div>"
 
 /***/ }),
 
@@ -583,7 +647,7 @@ module.exports = "<p>\n  login works!\n</p>\n"
 /***/ 553:
 /***/ (function(module, exports) {
 
-module.exports = "<clr-wizard class=\"clr-wiz\" #wizard [(clrWizardOpen)]=\"open\" [clrWizardSize]=\"'lg'\">\n    <div class=\"wizard-title\"><h3 class=\"modal-title text-center\">Send Money</h3></div>\n\n    <clr-wizard-step>What</clr-wizard-step>\n    <clr-wizard-step>When</clr-wizard-step>\n    <clr-wizard-step>Review</clr-wizard-step>\n\n    <clr-wizard-page>Content for step 1</clr-wizard-page>\n    <clr-wizard-page>Content for step 2</clr-wizard-page>\n    <clr-wizard-page>Content for step 3</clr-wizard-page>\n</clr-wizard>"
+module.exports = "<clr-wizard class=\"clr-wiz\" #wizard [(clrWizardOpen)]=\"open\" [clrWizardSize]=\"'lg'\">\n    <div class=\"wizard-title\"><h3 class=\"modal-title text-center\">Send Money</h3></div>\n\n    <clr-wizard-step>What</clr-wizard-step>\n    <clr-wizard-step>When</clr-wizard-step>\n    <clr-wizard-step>Review</clr-wizard-step>\n\n    <clr-wizard-page>Content for step 1</clr-wizard-page>\n    <clr-wizard-page>Content for step 2</clr-wizard-page>\n    <clr-wizard-page [clrWizardPagePreventDefault]=\"true\" (clrWizardPageOnCommit)=\"onCommit()\">Content for step 3</clr-wizard-page>\n</clr-wizard>"
 
 /***/ }),
 
