@@ -5,6 +5,38 @@ a{
 .margin{
     margin:2%;
 }
+.branding1{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    min-width: 204px;
+    padding: 0 24px;
+}
+.branding1>a, .branding1>.nav-link{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 60px;
+}
+.branding1 clr-icon {
+    height: 36px;
+    width: 36px;
+}
+.branding1 .title{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Metropolis,"Avenir Next","Helvetica Neue",Arial,sans-serif;
+    letter-spacing: .01em;
+    color: #fafafa;
+    line-height: 60px;
+    text-decoration: none;
+}
 /** cards */
 .card-block {
     height: 65px;
@@ -62,39 +94,4 @@ a{
     padding: 0 8px;
     border-radius: 15px;
     height: 15px;
-}
-/** dropdown */
-.dropdown .dropdown-menu .dropdown-item{
-    padding: 2.5% 0 2.5% 1%;
-    line-height: 46px;
-    width:300px;
-}
-clr-tree-node.list .clr-treenode-caret clr-icon{
-    height: 16px!important;
-}
-/** vertical lines */
-.list clr-tree-node {
-    position: relative;
-    display: table;
-    list-style-type: circle;
-    padding: 7px 0 10px 30px;
-}
-.list clr-tree-node:not(:last-child):before {
-    background-color: lightgrey;
-    content: '';
-    position: absolute;
-    left: 38px;
-    top: 22px;
-    height: 100%;
-    width: 1px;
-}
-.list clr-tree-node:after {
-    position: absolute;
-    top: 19px;
-    left: 35px;
-    width: 7px;
-    height: 7px;
-    border-radius: 100%;
-    background-color:lightgrey;
-    content: '';
 }

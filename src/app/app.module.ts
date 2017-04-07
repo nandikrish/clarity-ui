@@ -15,6 +15,17 @@ import { LoginComponent } from './login/login.component';
 import { SendMoneyComponent } from './send-money.component';
 // import { Ng2WizardModule } from 'ng2-wizard';
 import {WizardModule} from "ng2-archwizard/dist";
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MenuComponent } from './menu/menu.component';
+import { PaymentComponent } from './payment/payment.component';
+import { TrackComponent } from './track/track.component';
+import { FinanceComponent } from './finance/finance.component';
+import { CashFlowComponent } from './cash-flow/cash-flow.component';
+import { CustomerComponent } from './customer/customer.component';
+import { BusinessComponent } from './business/business.component';
+import { PlanComponent } from './plan/plan.component';
+import { OptimizeComponent } from './optimize/optimize.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +37,17 @@ import {WizardModule} from "ng2-archwizard/dist";
     InvestmentsComponent,
     LoginComponent,
     SendMoneyComponent,
+    DashboardComponent,
+    MenuComponent,
+    PaymentComponent,
+    TrackComponent,
+    FinanceComponent,
+    CashFlowComponent,
+    CustomerComponent,
+    BusinessComponent,
+    PlanComponent,
+    OptimizeComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

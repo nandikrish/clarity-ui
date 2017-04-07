@@ -4,7 +4,6 @@ import {Wizard} from "clarity-angular";
 @Component({
   selector: 'ui-send-money',
   templateUrl: './send-money.component.html',
-  styleUrls: ['./send-money.component.sass']
 })
 export class SendMoneyComponent implements OnInit {
 

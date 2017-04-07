@@ -1,0 +1,122 @@
+<div class="dropdown-menu">
+  <clr-tree>
+    <clr-tree-node class="list">
+      <a routerLink="dashboard" routerLinkActive="active">
+        <clr-icon shape="dashboard" size="22"></clr-icon>Dashboard
+      </a>
+    </clr-tree-node>
+    <clr-tree-node class="list" routerLinkActive="active">
+      <a routerLink="payment">
+        <clr-icon shape="folder" size="22"></clr-icon>Payment Center
+      </a>
+    </clr-tree-node>
+    <clr-tree-node class="list">
+      <a>
+        <clr-icon shape="folder" size="22"></clr-icon>Track
+      </a>
+      <clr-tree-node>
+        <button routerLink="track" class="clr-treenode-link" routerLinkActive="active">
+                Accounts
+            </button>
+      </clr-tree-node>
+      <clr-tree-node>
+        <button routerLink="cashAccounts" class="clr-treenode-link" routerLinkActive="active">
+                Cash
+            </button>
+      </clr-tree-node>
+    </clr-tree-node>
+    <clr-tree-node class="list">
+      <a>
+        <clr-icon shape="bar-chart" size="22"></clr-icon>Analyze
+      </a>
+      <clr-tree-node>
+        <button routerLink="allAccounts" class="clr-treenode-link" routerLinkActive="active">
+                Accounts
+            </button>
+      </clr-tree-node>
+      <clr-tree-node>
+        <button routerLink="finance" class="clr-treenode-link" routerLinkActive="active">
+                Financial Analysis
+            </button>
+      </clr-tree-node>
+      <clr-tree-node>
+        <button routerLink="cashFlow" class="clr-treenode-link" routerLinkActive="active">
+                Cash Flow
+            </button>
+      </clr-tree-node>
+      <clr-tree-node>
+        <button routerLink="customer" class="clr-treenode-link" routerLinkActive="active">
+                Customer Insights
+            </button>
+      </clr-tree-node>
+      <clr-tree-node>
+        <button routerLink="business" class="clr-treenode-link" routerLinkActive="active">
+                Business Benchmark
+            </button>
+      </clr-tree-node>
+    </clr-tree-node>
+    <clr-tree-node class="list">
+      <a>
+        <clr-icon shape="folder" size="22"></clr-icon>Plan
+      </a>
+      <clr-tree-node>
+        <button routerLink="plan" class="clr-treenode-link" routerLinkActive="active">
+                Loan Plans
+            </button>
+      </clr-tree-node>
+      <clr-tree-node>
+        <button routerLink="investments" class="clr-treenode-link" routerLinkActive="active">
+                Investments
+            </button>
+      </clr-tree-node>
+    </clr-tree-node>
+    <clr-tree-node class="list">
+      <a>
+        <clr-icon shape="folder" size="22"></clr-icon>Optimize
+      </a>
+      <clr-tree-node>
+        <button routerLink="optimize" class="clr-treenode-link" routerLinkActive="active">
+                Optimize Accounts
+            </button>
+      </clr-tree-node>
+    </clr-tree-node>
+    <clr-tree-node class="list">
+      <a routerLink="contact"  routerLinkActive="active">
+        <clr-icon shape="folder" size="22"></clr-icon>Contact Book
+      </a>
+    </clr-tree-node>
+  </clr-tree>
+  <div class="dropdown-divider"></div>
+  <div class="card-block">
+    <div class="row text-center">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text1">
+        <div class="card-title">
+          <clr-icon shape="settings" size="22"></clr-icon>
+        </div>
+        <div class="card-text">Night Mode</div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text1">
+        <div class="card-title">
+          <clr-icon shape="settings" size="22"></clr-icon>
+        </div>
+        <div class="card-text">Settings</div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text1">
+        <div class="card-title">
+          <clr-icon shape="settings" size="22"></clr-icon>
+        </div>
+        <div class="card-text">Approvals</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<clr-tree-node *ngFor="let directory of rootDirectory" [clrTreeNodeExpanded]="directory.expanded" class="list" routerLinkActive="active">
+    <clr-icon [attr.shape]="directory.icon" size="22"></clr-icon>
+    <a routerLink={{directory.linkUrl}}>{{directory.name}}</a>
+    <clr-tree-node *ngFor="let file of directory.files">
+      <a routerLink={{file.linkUrl}} class="clr-treenode-link" [class.active]="file.active">
+                {{file.name}}
+            </a>
+    </clr-tree-node>
+  </clr-tree-node>-->
