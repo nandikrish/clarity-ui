@@ -1,6 +1,6 @@
 webpackJsonp([1,5],{
 
-/***/ 307:
+/***/ 308:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -55,7 +55,7 @@ var AllAccountsComponent = (function () {
 
 /***/ }),
 
-/***/ 308:
+/***/ 309:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -89,7 +89,7 @@ var BankLoansComponent = (function () {
 
 /***/ }),
 
-/***/ 309:
+/***/ 310:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -123,7 +123,7 @@ var BusinessComponent = (function () {
 
 /***/ }),
 
-/***/ 310:
+/***/ 311:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -157,7 +157,7 @@ var CardsComponent = (function () {
 
 /***/ }),
 
-/***/ 311:
+/***/ 312:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -191,7 +191,7 @@ var CashAccountsComponent = (function () {
 
 /***/ }),
 
-/***/ 312:
+/***/ 313:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -225,7 +225,7 @@ var CashFlowComponent = (function () {
 
 /***/ }),
 
-/***/ 313:
+/***/ 314:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -259,7 +259,7 @@ var ContactComponent = (function () {
 
 /***/ }),
 
-/***/ 314:
+/***/ 315:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -293,7 +293,7 @@ var CustomerComponent = (function () {
 
 /***/ }),
 
-/***/ 315:
+/***/ 316:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -327,7 +327,7 @@ var DashboardComponent = (function () {
 
 /***/ }),
 
-/***/ 316:
+/***/ 317:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -361,7 +361,7 @@ var FinanceComponent = (function () {
 
 /***/ }),
 
-/***/ 317:
+/***/ 318:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -395,7 +395,7 @@ var InvestmentsComponent = (function () {
 
 /***/ }),
 
-/***/ 318:
+/***/ 319:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -429,7 +429,7 @@ var OptimizeComponent = (function () {
 
 /***/ }),
 
-/***/ 319:
+/***/ 320:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -463,7 +463,7 @@ var PaymentComponent = (function () {
 
 /***/ }),
 
-/***/ 320:
+/***/ 321:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -497,7 +497,7 @@ var PlanComponent = (function () {
 
 /***/ }),
 
-/***/ 321:
+/***/ 322:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -531,7 +531,7 @@ var TrackComponent = (function () {
 
 /***/ }),
 
-/***/ 358:
+/***/ 359:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -540,18 +540,18 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 358;
+webpackEmptyContext.id = 359;
 
 
 /***/ }),
 
-/***/ 359:
+/***/ 360:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(451);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(452);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(483);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(488);
 
@@ -613,30 +613,30 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(84);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(447);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_clarity_angular__ = __webpack_require__(322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(448);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_clarity_angular__ = __webpack_require__(323);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_clarity_angular___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_clarity_angular__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_routing__ = __webpack_require__(484);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(482);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__all_accounts_all_accounts_component__ = __webpack_require__(307);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__cash_accounts_cash_accounts_component__ = __webpack_require__(311);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__cards_cards_component__ = __webpack_require__(310);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bank_loans_bank_loans_component__ = __webpack_require__(308);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__investments_investments_component__ = __webpack_require__(317);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__all_accounts_all_accounts_component__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__cash_accounts_cash_accounts_component__ = __webpack_require__(312);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__cards_cards_component__ = __webpack_require__(311);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bank_loans_bank_loans_component__ = __webpack_require__(309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__investments_investments_component__ = __webpack_require__(318);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__login_login_component__ = __webpack_require__(485);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__send_money_component__ = __webpack_require__(487);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ng2_archwizard_dist__ = __webpack_require__(553);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__dashboard_dashboard_component__ = __webpack_require__(315);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__dashboard_dashboard_component__ = __webpack_require__(316);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__menu_menu_component__ = __webpack_require__(486);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__payment_payment_component__ = __webpack_require__(319);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__track_track_component__ = __webpack_require__(321);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__finance_finance_component__ = __webpack_require__(316);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__cash_flow_cash_flow_component__ = __webpack_require__(312);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__customer_customer_component__ = __webpack_require__(314);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__business_business_component__ = __webpack_require__(309);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__plan_plan_component__ = __webpack_require__(320);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__optimize_optimize_component__ = __webpack_require__(318);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__contact_contact_component__ = __webpack_require__(313);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__payment_payment_component__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__track_track_component__ = __webpack_require__(322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__finance_finance_component__ = __webpack_require__(317);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__cash_flow_cash_flow_component__ = __webpack_require__(313);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__customer_customer_component__ = __webpack_require__(315);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__business_business_component__ = __webpack_require__(310);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__plan_plan_component__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__optimize_optimize_component__ = __webpack_require__(319);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__contact_contact_component__ = __webpack_require__(314);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -723,22 +723,22 @@ var AppModule = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(471);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__all_accounts_all_accounts_component__ = __webpack_require__(307);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cash_accounts_cash_accounts_component__ = __webpack_require__(311);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cards_cards_component__ = __webpack_require__(310);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bank_loans_bank_loans_component__ = __webpack_require__(308);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__investments_investments_component__ = __webpack_require__(317);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dashboard_dashboard_component__ = __webpack_require__(315);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__payment_payment_component__ = __webpack_require__(319);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__track_track_component__ = __webpack_require__(321);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__finance_finance_component__ = __webpack_require__(316);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__cash_flow_cash_flow_component__ = __webpack_require__(312);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__customer_customer_component__ = __webpack_require__(314);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__business_business_component__ = __webpack_require__(309);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__plan_plan_component__ = __webpack_require__(320);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__optimize_optimize_component__ = __webpack_require__(318);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__contact_contact_component__ = __webpack_require__(313);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__all_accounts_all_accounts_component__ = __webpack_require__(308);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cash_accounts_cash_accounts_component__ = __webpack_require__(312);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cards_cards_component__ = __webpack_require__(311);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bank_loans_bank_loans_component__ = __webpack_require__(309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__investments_investments_component__ = __webpack_require__(318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dashboard_dashboard_component__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__payment_payment_component__ = __webpack_require__(320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__track_track_component__ = __webpack_require__(322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__finance_finance_component__ = __webpack_require__(317);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__cash_flow_cash_flow_component__ = __webpack_require__(313);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__customer_customer_component__ = __webpack_require__(315);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__business_business_component__ = __webpack_require__(310);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__plan_plan_component__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__optimize_optimize_component__ = __webpack_require__(319);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__contact_contact_component__ = __webpack_require__(314);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
 
 
@@ -818,6 +818,8 @@ var LoginComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(44);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -829,91 +831,147 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 var MenuComponent = (function () {
-    function MenuComponent() {
-        this.expanded = false;
+    function MenuComponent(_router, location) {
+        this._router = _router;
+        this.location = location;
+        this.rootMenu = [
+            {
+                name: "Dashboard",
+                icon: "dashboard",
+                expanded: false,
+                linkUrl: "dashboard"
+            },
+            {
+                name: "Payment Center",
+                icon: "folder",
+                expanded: false,
+                linkUrl: "payment"
+            },
+            {
+                name: "Track",
+                icon: "folder",
+                expanded: false,
+                files: [
+                    {
+                        icon: "folder",
+                        name: "Accounts",
+                        linkUrl: "track"
+                    },
+                    {
+                        icon: "folder",
+                        name: "Cash",
+                        linkUrl: "cashAccounts"
+                    },
+                ]
+            },
+            {
+                name: "Analyze",
+                icon: "bar-chart",
+                expanded: false,
+                files: [
+                    {
+                        icon: "image",
+                        name: "Accounts",
+                        linkUrl: "allAccounts"
+                    },
+                    {
+                        icon: "image",
+                        name: "Financial Analysis",
+                        linkUrl: "finance"
+                    },
+                    {
+                        icon: "image",
+                        name: "Cash Flow",
+                        linkUrl: "cashFlow"
+                    },
+                    {
+                        icon: "image",
+                        name: "Customer Insights",
+                        linkUrl: "customer"
+                    },
+                    {
+                        icon: "image",
+                        name: "Business Benchmark",
+                        linkUrl: "business"
+                    },
+                ]
+            },
+            {
+                name: "Plan",
+                icon: "folder",
+                expanded: false,
+                files: [
+                    {
+                        icon: "folder",
+                        name: "Loan Plans",
+                        linkUrl: "plan"
+                    },
+                    {
+                        icon: "folder",
+                        name: "Investments",
+                        linkUrl: "investments"
+                    }
+                ]
+            },
+            {
+                name: "Optimize",
+                icon: "folder",
+                expanded: false,
+                files: [
+                    {
+                        icon: "folder",
+                        name: "Optimize Accounts",
+                        linkUrl: "optimize"
+                    }
+                ]
+            },
+            {
+                name: "Contact Book",
+                icon: "folder",
+                expanded: false,
+                linkUrl: "contact"
+            },
+        ];
+        this.rootDivider = [
+            {
+                name: "Night Mode",
+                icon: "settings",
+            },
+            {
+                name: "Settings",
+                icon: "settings",
+            },
+            {
+                name: "Approvals",
+                icon: "settings",
+            },
+        ];
     }
+    MenuComponent.prototype.onExpand = function (menu) {
+        if (menu.files) {
+            menu.expanded = !menu.expanded;
+        }
+        else {
+            this._router.navigate([menu.linkUrl]);
+        }
+    };
+    MenuComponent.prototype.isRouteActive = function (path) {
+        return this.location.path().indexOf(path) > -1;
+    };
     MenuComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'ui-menu',
             template: __webpack_require__(570),
             styles: [__webpack_require__(546)]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_common__["Location"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_common__["Location"]) === 'function' && _b) || Object])
     ], MenuComponent);
     return MenuComponent;
+    var _a, _b;
 }());
-// rootDirectory: any[] = [
-//   {
-//     name: "Dashboard",
-//     icon: "dashboard",
-//     expanded: false,
-//     linkUrl:"dashboard"
-//   },
-//   {
-//     name: "Payment Center",
-//     icon: "folder",
-//     expanded: false,
-//     linkUrl:"cashAccounts"
-//   },
-//   {
-//     name: "Track",
-//     icon: "folder",
-//     expanded: false,
-//     linkUrl:"cards"
-//   },
-//   {
-//     name: "Analyze",
-//     icon: "bar-chart",
-//     expanded: false,
-//     active:false,
-//     files: [
-//       {
-//         icon: "image",
-//         name: "Accounts",
-//         linkUrl:"allAccounts"
-//       },
-//       {
-//         icon: "image",
-//         name: "Financial Analysis",
-//         linkUrl:"bankLoans"
-//       },
-//       {
-//         icon: "image",
-//         name: "Cash Flow",
-//         linkUrl:"investments"
-//       },
-//       {
-//         icon: "image",
-//         name: "Customer Insights",
-//         linkUrl:"allAccounts"
-//       },
-//       {
-//         icon: "image",
-//         name: "Business Benchmark",
-//         linkUrl:"investments"
-//       },
-//     ]
-//   },
-//   {
-//     name: "Plan",
-//     icon: "folder",
-//     expanded: false,
-//     linkUrl:"bankLoans"
-//   },
-//   {
-//     name: "Optimize",
-//     icon: "folder",
-//     expanded: false,
-//     linkUrl:"cards"
-//   },
-//   {
-//     name: "Contact Book",
-//     icon: "folder",
-//     expanded: false,
-//     linkUrl:"bankLoans"
-//   },
-// ]; 
 //# sourceMappingURL=menu.component.js.map
 
 /***/ }),
@@ -923,7 +981,7 @@ var MenuComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_clarity_angular__ = __webpack_require__(322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_clarity_angular__ = __webpack_require__(323);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_clarity_angular___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_clarity_angular__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SendMoneyComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -987,7 +1045,7 @@ var environment = {
 /***/ 544:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(53)();
+exports = module.exports = __webpack_require__(54)();
 // imports
 
 
@@ -1005,7 +1063,7 @@ module.exports = module.exports.toString();
 /***/ 545:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(53)();
+exports = module.exports = __webpack_require__(54)();
 // imports
 
 
@@ -1023,12 +1081,12 @@ module.exports = module.exports.toString();
 /***/ 546:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(53)();
+exports = module.exports = __webpack_require__(54)();
 // imports
 
 
 // module
-exports.push([module.i, "a{\n    text-decoration:none;\n    color:#565656;\n}\n/** dropdown */\n.dropdown-menu{\n    margin:12px 0 0 0 !important;\n    padding-top:12px;\n    box-shadow: 0px 1px 10px 0px lightgrey;\n}\n.dropdown-menu clr-tree-node{\n    line-height: 40px;\n    min-width:300px !important;\n}\n.dropdown-menu clr-tree-node .clr-treenode-link{\n    min-width:300px !important;\n}\n.list a{\n    position: inherit;\n    display: block;\n    padding: 2% 0 2% 10% !important;\n}\n.list a:hover{\n    background-color: #eee;\n    /*color: #000;*/\n}\n.list a.active{\n    background-color: #D9E4EA;\n    color: #000;\n}\n/** vertical lines */\n.list clr-tree-node {\n    position: relative;\n    display: table;\n    list-style-type: circle;\n    padding: 7px 0 10px 30px;\n}\n.list clr-tree-node:not(:last-child):before {\n    background-color: lightgrey;\n    content: '';\n    position: absolute;\n    left: 20px;\n    top: 22px;\n    height: 100%;\n    width: 1px;\n}\n.list clr-tree-node:after {\n    position: absolute;\n    top: 19px;\n    left: 17px;\n    width: 7px;\n    height: 7px;\n    border-radius: 100%;\n    background-color:lightgrey;\n    content: '';\n}\n/** cards */\n.row{\n    padding-right:15px;\n    padding-left:15px;\n}\n.card-block{\n    height: 55px;\n}\n.text1 .card-text{\n    padding-top: 0.5em\n}\n.text1 .card-title clr-icon{\n    margin-right: 0\n}", ""]);
+exports.push([module.i, "a{\n    text-decoration:none;\n    color:#565656;\n}\n/** dropdown */\n.dropdown-menu{\n    margin:12px 0 0 0 !important;\n    padding-top:12px;\n    box-shadow: 0px 1px 10px 0px lightgrey;\n}\n.dropdown-menu clr-tree-node{\n    line-height: 40px;\n    min-width:300px !important;\n}\n.dropdown-menu clr-tree-node .clr-treenode-link{\n    min-width:300px !important;\n}\n.list a{\n    position: inherit;\n    display: block;\n    padding: 2% 0 2% 10% !important;\n    cursor: pointer;\n}\n.list a:hover{\n    background-color: #eee;\n}\n.list a.active{\n    background-color: #D9E4EA;\n    color: #000;\n    border-radius: none;\n}\n/** vertical lines */\n.list clr-tree-node {\n    position: relative;\n    display: table;\n    list-style-type: circle;\n    padding: 7px 0 10px 30px;\n}\n.list clr-tree-node:not(:last-child):before {\n    background-color: lightgrey;\n    content: '';\n    position: absolute;\n    left: 20px;\n    top: 22px;\n    height: 100%;\n    width: 1px;\n}\n.list clr-tree-node:after {\n    position: absolute;\n    top: 19px;\n    left: 17px;\n    width: 7px;\n    height: 7px;\n    border-radius: 100%;\n    background-color:lightgrey;\n    content: '';\n}\n/** cards */\n.row{\n    padding-right:15px;\n    padding-left:15px;\n}\n.card-block{\n    height: 55px;\n}\n.text1 .card-text{\n    padding-top: 0.5em\n}\n.text1 .card-title clr-icon{\n    margin-right: 0\n}", ""]);
 
 // exports
 
@@ -1132,7 +1190,7 @@ module.exports = "<p>\n  login works!\n</p>\n"
 /***/ 570:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"dropdown-menu\">\n  <clr-tree>\n    <clr-tree-node class=\"list\">\n      <a routerLink=\"dashboard\" routerLinkActive=\"active\">\n        <clr-icon shape=\"dashboard\" size=\"22\"></clr-icon>Dashboard\n      </a>\n    </clr-tree-node>\n    <clr-tree-node class=\"list\">\n      <a routerLink=\"payment\" routerLinkActive=\"active\">\n        <clr-icon shape=\"folder\" size=\"22\"></clr-icon>Payment Center\n      </a>\n    </clr-tree-node>\n    <clr-tree-node class=\"list\">\n      <a>\n        <clr-icon shape=\"folder\" size=\"22\"></clr-icon>Track\n      </a>\n      <clr-tree-node>\n        <button routerLink=\"track\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Accounts\n            </button>\n      </clr-tree-node>\n      <clr-tree-node>\n        <button routerLink=\"cashAccounts\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Cash\n            </button>\n      </clr-tree-node>\n    </clr-tree-node>\n    <clr-tree-node class=\"list\">\n      <a>\n        <clr-icon shape=\"bar-chart\" size=\"22\"></clr-icon>Analyze\n      </a>\n      <clr-tree-node>\n        <button routerLink=\"allAccounts\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Accounts\n            </button>\n      </clr-tree-node>\n      <clr-tree-node>\n        <button routerLink=\"finance\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Financial Analysis\n            </button>\n      </clr-tree-node>\n      <clr-tree-node>\n        <button routerLink=\"cashFlow\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Cash Flow\n            </button>\n      </clr-tree-node>\n      <clr-tree-node>\n        <button routerLink=\"customer\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Customer Insights\n            </button>\n      </clr-tree-node>\n      <clr-tree-node>\n        <button routerLink=\"business\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Business Benchmark\n            </button>\n      </clr-tree-node>\n    </clr-tree-node>\n    <clr-tree-node class=\"list\">\n      <a>\n        <clr-icon shape=\"folder\" size=\"22\"></clr-icon>Plan\n      </a>\n      <clr-tree-node>\n        <button routerLink=\"plan\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Loan Plans\n            </button>\n      </clr-tree-node>\n      <clr-tree-node>\n        <button routerLink=\"investments\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Investments\n            </button>\n      </clr-tree-node>\n    </clr-tree-node>\n    <clr-tree-node class=\"list\">\n      <a>\n        <clr-icon shape=\"folder\" size=\"22\"></clr-icon>Optimize\n      </a>\n      <clr-tree-node>\n        <button routerLink=\"optimize\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Optimize Accounts\n            </button>\n      </clr-tree-node>\n    </clr-tree-node>\n    <clr-tree-node class=\"list\">\n      <a routerLink=\"contact\"  routerLinkActive=\"active\">\n        <clr-icon shape=\"folder\" size=\"22\"></clr-icon>Contact Book\n      </a>\n    </clr-tree-node>\n  </clr-tree>\n  <div class=\"dropdown-divider\"></div>\n  <div class=\"card-block\">\n    <div class=\"row text-center\">\n      <div class=\"col-lg-4 col-md-4 col-sm-4 col-xs-4 text1\">\n        <div class=\"card-title\">\n          <clr-icon shape=\"settings\" size=\"22\"></clr-icon>\n        </div>\n        <div class=\"card-text\">Night Mode</div>\n      </div>\n      <div class=\"col-lg-4 col-md-4 col-sm-4 col-xs-4 text1\">\n        <div class=\"card-title\">\n          <clr-icon shape=\"settings\" size=\"22\"></clr-icon>\n        </div>\n        <div class=\"card-text\">Settings</div>\n      </div>\n      <div class=\"col-lg-4 col-md-4 col-sm-4 col-xs-4 text1\">\n        <div class=\"card-title\">\n          <clr-icon shape=\"settings\" size=\"22\"></clr-icon>\n        </div>\n        <div class=\"card-text\">Approvals</div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!--<clr-tree-node *ngFor=\"let directory of rootDirectory\" [clrTreeNodeExpanded]=\"directory.expanded\" class=\"list\" routerLinkActive=\"active\">\n    <clr-icon [attr.shape]=\"directory.icon\" size=\"22\"></clr-icon>\n    <a routerLink={{directory.linkUrl}}>{{directory.name}}</a>\n    <clr-tree-node *ngFor=\"let file of directory.files\">\n      <a routerLink={{file.linkUrl}} class=\"clr-treenode-link\" [class.active]=\"file.active\">\n                {{file.name}}\n            </a>\n    </clr-tree-node>\n  </clr-tree-node>-->"
+module.exports = "<div class=\"dropdown-menu\">\n  <!--<clr-tree>\n    <clr-tree-node class=\"list\">\n      <a routerLink=\"dashboard\" routerLinkActive=\"active\">\n        <clr-icon shape=\"dashboard\" size=\"22\"></clr-icon>Dashboard\n      </a>\n    </clr-tree-node>\n    <clr-tree-node class=\"list\">\n      <a routerLink=\"payment\" routerLinkActive=\"active\">\n        <clr-icon shape=\"folder\" size=\"22\"></clr-icon>Payment Center\n      </a>\n    </clr-tree-node>\n    <clr-tree-node class=\"list\">\n      <a>\n        <clr-icon shape=\"folder\" size=\"22\"></clr-icon>Track\n      </a>\n      <clr-tree-node>\n        <button routerLink=\"track\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Accounts\n            </button>\n      </clr-tree-node>\n      <clr-tree-node>\n        <button routerLink=\"cashAccounts\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Cash\n            </button>\n      </clr-tree-node>\n    </clr-tree-node>\n    <clr-tree-node class=\"list\">\n      <a>\n        <clr-icon shape=\"bar-chart\" size=\"22\"></clr-icon>Analyze\n      </a>\n      <clr-tree-node>\n        <button routerLink=\"allAccounts\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Accounts\n            </button>\n      </clr-tree-node>\n      <clr-tree-node>\n        <button routerLink=\"finance\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Financial Analysis\n            </button>\n      </clr-tree-node>\n      <clr-tree-node>\n        <button routerLink=\"cashFlow\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Cash Flow\n            </button>\n      </clr-tree-node>\n      <clr-tree-node>\n        <button routerLink=\"customer\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Customer Insights\n            </button>\n      </clr-tree-node>\n      <clr-tree-node>\n        <button routerLink=\"business\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Business Benchmark\n            </button>\n      </clr-tree-node>\n    </clr-tree-node>\n    <clr-tree-node class=\"list\">\n      <a>\n        <clr-icon shape=\"folder\" size=\"22\"></clr-icon>Plan\n      </a>\n      <clr-tree-node>\n        <button routerLink=\"plan\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Loan Plans\n            </button>\n      </clr-tree-node>\n      <clr-tree-node>\n        <button routerLink=\"investments\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Investments\n            </button>\n      </clr-tree-node>\n    </clr-tree-node>\n    <clr-tree-node class=\"list\">\n      <a>\n        <clr-icon shape=\"folder\" size=\"22\"></clr-icon>Optimize\n      </a>\n      <clr-tree-node>\n        <button routerLink=\"optimize\" class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                Optimize Accounts\n            </button>\n      </clr-tree-node>\n    </clr-tree-node>\n    <clr-tree-node class=\"list\">\n      <a routerLink=\"contact\"  routerLinkActive=\"active\">\n        <clr-icon shape=\"folder\" size=\"22\"></clr-icon>Contact Book\n      </a>\n    </clr-tree-node>\n  </clr-tree>\n  <div class=\"dropdown-divider\"></div>\n  <div class=\"card-block\">\n    <div class=\"row text-center\">\n      <div class=\"col-lg-4 col-md-4 col-sm-4 col-xs-4 text1\">\n        <div class=\"card-title\">\n          <clr-icon shape=\"settings\" size=\"22\"></clr-icon>\n        </div>\n        <div class=\"card-text\">Night Mode</div>\n      </div>\n      <div class=\"col-lg-4 col-md-4 col-sm-4 col-xs-4 text1\">\n        <div class=\"card-title\">\n          <clr-icon shape=\"settings\" size=\"22\"></clr-icon>\n        </div>\n        <div class=\"card-text\">Settings</div>\n      </div>\n      <div class=\"col-lg-4 col-md-4 col-sm-4 col-xs-4 text1\">\n        <div class=\"card-title\">\n          <clr-icon shape=\"settings\" size=\"22\"></clr-icon>\n        </div>\n        <div class=\"card-text\">Approvals</div>\n      </div>\n    </div>\n  </div>-->\n  <clr-tree-node *ngFor=\"let menu of rootMenu\" [clrTreeNodeExpanded]=\"menu.expanded\" class=\"list\">\n    <a (click)=\"onExpand(menu)\" [class.active]=\"isRouteActive(menu.linkUrl)\">\n      <clr-icon [attr.shape]=\"menu.icon\" size=\"22\"></clr-icon>{{menu.name}}\n    </a>\n    <clr-tree-node *ngFor=\"let file of menu.files\">\n      <button routerLink={{file.linkUrl}} class=\"clr-treenode-link\" routerLinkActive=\"active\">\n                {{file.name}}\n            </button>\n    </clr-tree-node>\n  </clr-tree-node>\n  <div class=\"dropdown-divider\"></div>\n  <div class=\"card-block\">\n    <div class=\"row text-center\">\n      <div class=\"col-lg-4 col-md-4 col-sm-4 col-xs-4 text1\" *ngFor=\"let divider of rootDivider\">\n        <div class=\"card-title\">\n          <clr-icon [attr.shape]=\"divider.icon\" size=\"22\"></clr-icon>\n        </div>\n        <div class=\"card-text\">{{divider.name}}</div>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -1174,7 +1232,7 @@ module.exports = "<h1 class=\"text-center\">\n  track works!\n</h1>\n"
 /***/ 593:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(359);
+module.exports = __webpack_require__(360);
 
 
 /***/ })
