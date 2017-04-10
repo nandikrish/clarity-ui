@@ -1,5 +1,5 @@
 <div class="dropdown-menu">
-  <clr-tree>
+  <!--<clr-tree>
     <clr-tree-node class="list">
       <a routerLink="dashboard" routerLinkActive="active">
         <clr-icon shape="dashboard" size="22"></clr-icon>Dashboard
@@ -108,15 +108,26 @@
         <div class="card-text">Approvals</div>
       </div>
     </div>
+  </div>-->
+  <clr-tree-node *ngFor="let menu of rootMenu" [clrTreeNodeExpanded]="menu.expanded" class="list">
+    <a (click)="onExpand(menu)" [class.active]="isRouteActive(menu.linkUrl)">
+      <clr-icon [attr.shape]="menu.icon" size="22"></clr-icon>{{menu.name}}
+    </a>
+    <clr-tree-node *ngFor="let file of menu.files">
+      <button routerLink={{file.linkUrl}} class="clr-treenode-link" routerLinkActive="active">
+                {{file.name}}
+            </button>
+    </clr-tree-node>
+  </clr-tree-node>
+  <div class="dropdown-divider"></div>
+  <div class="card-block">
+    <div class="row text-center">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text1" *ngFor="let divider of rootDivider">
+        <div class="card-title">
+          <clr-icon [attr.shape]="divider.icon" size="22"></clr-icon>
+        </div>
+        <div class="card-text">{{divider.name}}</div>
+      </div>
+    </div>
   </div>
 </div>
-
-<!--<clr-tree-node *ngFor="let directory of rootDirectory" [clrTreeNodeExpanded]="directory.expanded" class="list" routerLinkActive="active">
-    <clr-icon [attr.shape]="directory.icon" size="22"></clr-icon>
-    <a routerLink={{directory.linkUrl}}>{{directory.name}}</a>
-    <clr-tree-node *ngFor="let file of directory.files">
-      <a routerLink={{file.linkUrl}} class="clr-treenode-link" [class.active]="file.active">
-                {{file.name}}
-            </a>
-    </clr-tree-node>
-  </clr-tree-node>-->
