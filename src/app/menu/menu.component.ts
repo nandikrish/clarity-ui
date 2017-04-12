@@ -7,7 +7,8 @@ import { Location } from '@angular/common';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
-export class MenuComponent {
+export class MenuComponent{
+  parentIndex:number;
 
   constructor(private _router: Router, private location: Location) { }
 
@@ -16,13 +17,13 @@ export class MenuComponent {
       name: "Dashboard",
       icon: "dashboard",
       expanded: false,
-      linkUrl: "dashboard"
+      linkUrl: "/dashboard"
     },
     {
       name: "Payment Center",
       icon: "folder",
       expanded: false,
-      linkUrl: "payment"
+      linkUrl: "/payment"
     },
     {
       name: "Track",
@@ -32,12 +33,12 @@ export class MenuComponent {
         {
           icon: "folder",
           name: "Accounts",
-          linkUrl: "track"
+          linkUrl: "/track"
         },
         {
           icon: "folder",
           name: "Cash",
-          linkUrl: "cashAccounts"
+          linkUrl: "/cashAccounts"
         },
       ]
     },
@@ -49,27 +50,27 @@ export class MenuComponent {
         {
           icon: "image",
           name: "Accounts",
-          linkUrl: "allAccounts"
+          linkUrl: "/allAccounts"
         },
         {
           icon: "image",
           name: "Financial Analysis",
-          linkUrl: "finance"
+          linkUrl: "/finance"
         },
         {
           icon: "image",
           name: "Cash Flow",
-          linkUrl: "cashFlow"
+          linkUrl: "/cashFlow"
         },
         {
           icon: "image",
           name: "Customer Insights",
-          linkUrl: "customer"
+          linkUrl: "/customer"
         },
         {
           icon: "image",
           name: "Business Benchmark",
-          linkUrl: "business"
+          linkUrl: "/business"
         },
       ]
     },
@@ -81,12 +82,12 @@ export class MenuComponent {
         {
           icon:"folder",
           name:"Loan Plans",
-          linkUrl:"plan"
+          linkUrl:"/plan"
         },
         {
           icon:"folder",
           name:"Investments",
-          linkUrl:"investments"
+          linkUrl:"/investments"
         }
       ]
     },
@@ -98,7 +99,7 @@ export class MenuComponent {
         {
           icon:"folder",
           name:"Optimize Accounts",
-          linkUrl:"optimize"
+          linkUrl:"/optimize"
         }
       ]
     },
@@ -106,7 +107,7 @@ export class MenuComponent {
       name: "Contact Book",
       icon: "folder",
       expanded: false,
-      linkUrl: "contact"
+      linkUrl: "/contact"
     },
   ];
 
@@ -114,26 +115,34 @@ export class MenuComponent {
     {
       name: "Night Mode",
       icon: "settings",
+      linkUrl: "nightMode"
     },
     {
       name: "Settings",
       icon: "settings",
+      linkUrl: "settings"
     },
     {
       name: "Approvals",
       icon: "settings",
+      linkUrl: "approvals"
     },
   ];
 
-  onExpand(menu) {
-    if (menu.files) {
-      menu.expanded = !menu.expanded;
-    } else {
-      this._router.navigate([menu.linkUrl]);
-    }
+  isRouteActive(menu) {
+      return this.location.path().indexOf(menu.linkUrl) > -1; 
   }
 
-  isRouteActive(path) {
-    return this.location.path().indexOf(path) > -1;
-  }
+  onExpand(menu, index) {
+    if (menu.files) {     
+      menu.expanded = !menu.expanded;
+    } else {
+      this.parentIndex = index;
+      this._router.navigate([menu.linkUrl]);
+    }
+  }  
+   
+  onClick(menu, index) {
+    this.parentIndex = index;
+  }   
 }

@@ -17,6 +17,9 @@ import { BusinessComponent } from './business/business.component';
 import { PlanComponent } from './plan/plan.component';
 import { OptimizeComponent } from './optimize/optimize.component';
 import { ContactComponent } from './contact/contact.component';
+import { NightModeComponent } from './night-mode/night-mode.component';
+import { ApprovalsComponent } from './approvals/approvals.component';
+import { SettingsComponent } from './settings/settings.component';
 
 const APP_ROUTES: Routes=[
     {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
@@ -35,6 +38,9 @@ const APP_ROUTES: Routes=[
     {path:'plan', component:PlanComponent},    
     {path:'optimize', component:OptimizeComponent},    
     {path:'contact', component:ContactComponent},    
+    {path:'nightMode', component:NightModeComponent},    
+    {path:'approvals', component:ApprovalsComponent},    
+    {path:'settings', component:SettingsComponent},    
 ]
 
 export const routing = RouterModule.forRoot(APP_ROUTES);

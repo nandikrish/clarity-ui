@@ -26,6 +26,9 @@ import { BusinessComponent } from './business/business.component';
 import { PlanComponent } from './plan/plan.component';
 import { OptimizeComponent } from './optimize/optimize.component';
 import { ContactComponent } from './contact/contact.component';
+import { NightModeComponent } from './night-mode/night-mode.component';
+import { SettingsComponent } from './settings/settings.component';
+import { ApprovalsComponent } from './approvals/approvals.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +51,9 @@ import { ContactComponent } from './contact/contact.component';
     PlanComponent,
     OptimizeComponent,
     ContactComponent,
+    NightModeComponent,
+    SettingsComponent,
+    ApprovalsComponent,
   ],
   imports: [
     BrowserModule,
