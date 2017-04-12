@@ -13,7 +13,7 @@
   <div class="card-block">
     <div class="row text-center">
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text1" *ngFor="let divider of rootDivider" routerLinkActive="active" >
-        <a (click)="onChange(divider.linkUrl)" routerLink={{divider.linkUrl}}>
+        <a routerLink={{divider.linkUrl}}>
           <div class="card-title">
             <clr-icon [attr.shape]="divider.icon" size="22"></clr-icon>
           </div>
